@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<title>ISS Location</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="/static/w3.css">
+<body>
+<header class="w3-container w3-red">
+  <h1>International Space Station</h1>
+</header>
+
+<img src="/static/images/E.jpg" alt="ISS1" style="width:100%">
+
+<div class="w3-container">
+  <p>The International Space Station (ISS) is a modular space station (habitable artificial satellite) in low Earth orbit. It is a multi-national collaborative project involving five participating space agencies: NASA (United States), Roscosmos (Russia), JAXA (Japan), ESA (Europe) and CSA (Canada). The ownership and use of the space station is established by intergovernmental treaties and agreements. The station serves as a microgravity and space environment research laboratory in which scientific research is conducted in astrobiology, astronomy, meteorology, physics, and other fields. The ISS is suited for testing the spacecraft systems and equipment required for possible future long-duration missions to the Moon and Mars.(Wikipedia).</p>    
+
+  <table class="w3-table w3-bordered w3-striped">
+    <thead>
+      <tr>
+        <th>Latitude</th>
+        <th>Longitude</th>
+        <th>Location</th>
+        <th>Distance (km) from me</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>{{lat}}</td>
+        <td>{{lon}}</td>
+        <td>{{cntry}}</td>
+        <td>{{dist}}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<!-- The location informaation -->
+<div class="w3-row-padding w3-margin-top">
+  <div class="w3-half">
+    <div class="w3-card">
+      <center><img src="{{flg}}" alt="Flag" style="width:100%"></center>
+      <div class="w3-container">
+        <p>The International Space Station is over {{cntry}}.</p>
+        <table class="w3-table w3-bordered w3-striped">
+    <thead>
+      <tr>
+        <th>Country</th>
+        <th>Capital</th>
+        <th>Population</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>{{cntry}}</td>
+        <td>{{captl}}</td>
+        <td>{{popln}}</td>
+      </tr>
+    </tbody>
+  </table>
+      </div>
+    </div>
+  </div>
+
+<!-- The weather information -->
+  <div class="w3-half">
+    <div class="w3-card">
+      <img src="/static/images/A.jpg" alt="space" style="width:100%">
+      <div class="w3-container">
+        
+        <p>The weather below the space staion is as below.</p>
+        <table class="w3-table w3-bordered w3-striped">
+    <thead>
+      <tr>
+        <th>Temperature(degC)</th>
+        <th>Humidity(%)</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>{{temp_c}}</td>
+        <td>{{humd}}</td>
+        <td>{{desc}}</td>
+      </tr>
+    </tbody>
+  </table>
+      </div>
+    </div>
+  </div>
+</div>
+
+<footer class="w3-container w3-red w3-margin-top">
+  <h5>Prepared by:</h5>
+  <p>Krishno Sarkar</p>
+</footer>
+
+</body>
+</html>
